@@ -68,7 +68,7 @@ The dataset contains 37 specifications of 1436 used Toyota Corolla cars for sale
 
 ### Accessing the Data
 
-Downloaded the csv file. I began by importing the data into a Jupyter notebook and exploring the data by checking the data types. This allowed me to determine that two of the variables (Model ID and Fuel_type) contain text, while all other variables were numbers. 
+The csv file with all data I used can be found in the ToyotaCorolla.csv file, and my Jupyter notebook code can be found under Toyota Corolla.ipynb. To begin, I downloaded the csv file,imported the data into a Jupyter notebook, and explored the data by checking the data types. This allowed me to determine that two of the variables (Model ID and Fuel_type) contain text, while all other variables were numbers. 
 
 ### Cleaning the Data
 
