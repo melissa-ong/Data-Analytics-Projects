@@ -5,7 +5,7 @@
 In this project, I complete a data analysis process, beginning with posing an objective of the analysis, and ending with reporting my findings and conclusions. 
 
 
-## Project Table of Contents: 
+## Table of Contents: 
 * Objective
 * Data Set
 * Column Descriptions
