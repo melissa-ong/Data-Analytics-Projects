@@ -68,7 +68,7 @@ The dataset contains 37 specifications of 1436 used Toyota Corolla cars for sale
 
 ### Accessing the Data
 
-The csv file with all data I used can be found in the ToyotaCorolla.csv file, and my Jupyter notebook code can be found under Toyota Corolla.ipynb. To begin, I downloaded the csv file,imported the data into a Jupyter notebook, and explored the data by checking the data types. This allowed me to determine that two of the variables (Model ID and Fuel_type) contain text, while all other variables were numbers. 
+The csv file with all data I used can be found in the ToyotaCorolla.csv file, and my Jupyter notebook code can be found under Toyota Corolla.ipynb. To begin, I downloaded the csv file, imported the data into a Jupyter notebook, and explored the data by checking the data types. This allowed me to determine that two of the variables (Model ID and Fuel_type) contain text, while all other variables were numbers. 
 
 ### Cleaning the Data
 
@@ -97,20 +97,20 @@ In regression 6, after removing Airbag 1, Mfg_Year became slightly insignificant
 
 I evaluated and validated the model in 3 ways:
 * Splitting data into training and testing set to compare predicted and actual values
-*	Checking R-squared
-* Checking root mean square error (RMSE)
+*	Checking the R-squared
+* Checking the root mean square error (RMSE)
 
 In the final model, the R-squared is high at 0.83, meaning that 83% of the variation of Price (dependent variable) is explained by the model. 
 
 After training the model using the 80% training data, I used the model to predict the y values of the test data and compared those predicted values to the actual y values from the test data. I was able to visualize this data using a distribution plot to compare the predicted versus actual price values. It appears the model’s predicted values tracks the pattern of the actual values well, other than a few areas that are slightly off. 
 
-The root mean square error (RMSE) is 1,680.46. Relative to the car prices, this is not a huge amount. The data ranges from 4,350 to 32,500 in terms of price in Euros. Relative to this range, the RMSE is small at 1,680.46.
+The root mean square error (RMSE) is 1,680.46, giving me an idea of how far off from the modeled regression line the actual data points are. Relative to the car prices, this is not a huge amount. The data ranges from 4,350 to 32,500 in terms of price in Euros. Relative to this range, the RMSE is small at 1,680.46.
 
 Given the RMSE value and the R-squared value, I would conclude that the model can predict Toyota Corolla prices with a decent level of accuracy. 
 
 ### Findings and Conclusions
 
-Overall, I developed a model for predicting the price of Toyota Corolla cars. The variables or features of Toyota Corolla cars that significantly contributed to their prices included Mfg_Year, HP, Met_Color, cc, Doors, Mfr_Guarantee, Guarantee_Period, Airco, Sport_Model, and Tow_Bar. 
+Overall, I developed a model for predicting the price of used Toyota Corolla cars for sale. The variables or features of Toyota Corolla cars that significantly contributed to their prices included Mfg_Year, HP, Met_Color, cc, Doors, Mfr_Guarantee, Guarantee_Period, Airco, Sport_Model, and Tow_Bar. 
 
 The coefficients of all the variables were positive, except for Tow_Bar. This means that the more recent the manufacturing year, the greater the horsepower, cylinder volume, number of doors, and guarantee period, as well as if the car was a metallic colour, was within the manufacturing guarantee period, had air conditioning, was a sports model and had no tow bar all would lead to a higher price. 
 
@@ -122,4 +122,4 @@ However, there are a few limitations of the model:
 
 One possible reason why the actual and predicted y doesn’t track more closely could be because of the values included in the training and testing sets. If I tested and trained the data multiple times, each time it may be tested and trained with different part of the data and I would likely have received a different result each time. In the future it may be worthwhile to look into cross validation methods so that each observation is used for both training and testing, allowing for a more accurate model. 
 
-Additionally, this model was only based on 1436 data points taken in 2004, which may limit the accuracy of the model if someone were to use the same model by 2015. To improve this model in the future, I would recommend adding new observations to the data over time as adding more data to the model can help the model become more accurate at predicting Toyota Corolla prices. 
+Additionally, this model was only based on 1436 data points taken in 2004, which may limit the accuracy of the model if someone were to use the same model by 2020. To improve this model in the future, I would recommend adding new observations to the data over time as adding more data to the model can help the model become more accurate at predicting Toyota Corolla prices. 
